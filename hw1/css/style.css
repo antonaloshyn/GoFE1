@@ -14,30 +14,24 @@ body {
 	margin: 0 auto;
 	background-color: whitesmoke;
 }
-.card .box:last-child {
-	border-bottom:none;
-}
 .box {
 	border-bottom: 1px solid #ccc;
 }
-
 .photo {
 	width: 200px;
 	height: 200px;
 }
-
 .center {
 	text-align:center;
 }
-
-.bold {
+.h4 {
 	font-weight:600;
+	font-style: italic;
 }
-/*
-.warning {
-	color:yellow;
+.card .box:last-child {
+	border-bottom:none;
 }
-.success {
-	color:green;
+.copywright {
+	text-align:right; 
+	font-size:11px;
 }
-*/
