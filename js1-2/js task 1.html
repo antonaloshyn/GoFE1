@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pow</title>
+</head>
+<body>
+
+<script type="text/javascript">
+alert('Приветствуем Вас в программе возведения в степень!');
+function pow(){		
+		var num = prompt("Введите число", "0");
+		var step = prompt("Введите степень", "0");
+    	var result = 1;
+	for (var i=1; i<=step; i++) {
+    	result *= num;
+    	console.log(result);
+    };
+	alert('Ваш результат ' + result);
+};
+pow();
+</script>
+
+</body>
+</html>

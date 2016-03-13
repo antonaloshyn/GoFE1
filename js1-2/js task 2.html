@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Massiv</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    function LogInForm() {
+        var arr = [];
+        for (var i = 1; i <= 5; i++) {
+            var arrElem = prompt("Введите элемент массива");
+            arr.unshift(arrElem);
+            console.log(arr);
+        };
+        alert('Ваш массив: ' + arr);
+        var userName = prompt("Введите свое имя");
+        var i = 0;
+        while (i < arr.length) {
+            if (arr[i] === userName) {
+                var flag = true;
+                break;
+            } else {
+                i++;
+                flag = false;
+            };
+        };
+        console.log(flag);
+        (flag == true) ? alert('Вы успешно вошли, ' + userName) : alert('Ошибка - такого имени нет');
+    };
+    LogInForm();
+    </script>
+</body>
+
+</html>
