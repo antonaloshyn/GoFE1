@@ -1,0 +1,25 @@
+body {
+	background-color: #5bc0de;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 700px;
+	background-color: white;
+	padding-bottom: 30px;
+}
+h2 {
+	text-align: center;
+	padding-top: 10px;
+}
+.categoryBox {
+	padding-left: 10px;
+}
+li {
+	list-style: none;
+}
+.listItem_link {
+	margin-left: 3px;
+}
+.checkbox {
+	display: inline-block;
+}
