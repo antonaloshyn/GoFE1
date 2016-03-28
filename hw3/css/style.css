@@ -1,27 +1,39 @@
 body {
 	width:100%;
-	/*background-color:#eefbf9;*/
+	height: 100%;
 	font-family: Calibri, sans-serif;
 	font-style: lightgray;
 	font-size: 90%;
 }
 .wrapper {
-	width: 1000px;
-	background-color: white;
 	margin: 0 auto;
-	padding: 20px;
+	width: 1000px;
+	height: 100%;
+	display: table;
+	overflow: hidden;
+	table-layout: fixed;
+	background-color: white;
+	color: #8c8c8c;
+
+}
+.w1 {
+	display: table-row;
+	height: 100%;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear:both;
 }
 /*HEADER*/
-.logo {
-	margin-bottom:10px;
-}
+
 .logo a {
 	display: block;
 }
 .nav {
 	list-style: none;
 	padding:0;
-	margin:0;
+	margin-bottom: 20px;
 }
 .nav li {
 	display: inline-block;
@@ -29,10 +41,16 @@ body {
 	text-align:center;
 	cursor: pointer;
 }
+.nav a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+}
 .header-menu .nav {
 	background-color: #666666;
 	color: white;
 }
+
 .header-menu .nav li:hover {
 	background-color: #595959;
 }
@@ -48,6 +66,11 @@ body {
 	border-style: solid;
 	border-color: lightgray;
 }
+.sidemenu a{
+	display: block;
+	text-decoration: none;
+	color: #8c8c8c;
+}
 .sidemenu li {
 	list-style: none;
 	padding: 10px 20px;
@@ -61,11 +84,7 @@ body {
 	padding-left: 30px;
 }
 /*CONTENT*/
-.container {
-	color: #8c8c8c;
-	line-height: 20px;
-	padding-top: 30px;
-}
+
 .content {
 	float: right;
 	width: 700px;
@@ -73,34 +92,47 @@ body {
 }
 .imgWrap {	
 	border: 1px solid lightgray;
+	padding: 20px 0 20px 0;
 	text-align: center;
-	width: 100%;
+	width: 99%;
 }
 .imgWrap img {
 	display: block;
 	max-width: 100%;
 	margin: 0 auto;
 }
-.clear {
-	clear:both;
-}
+
 /*FOOTER*/
 .footer {
-	margin-top: 20px;
 	background-color: #d8d8d8;
+	overflow: hidden;	
 }
 .footer-menu .nav {
-	width:70%;
+	width:80%;
+	height: 50px;
 	float: left;
+	margin: 0;
+	padding: 0;
 }
 .footer-menu .nav li {
-	color: black;
+	display: inline-block;
+	padding: 15px 25px;
+	text-align:center;
+	cursor: pointer;
 }
+.footer-menu a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding-bottom: 10px;
+}
+
 .footer-menu .nav li:hover {
 	text-decoration: underline;
 }
 .copyright {
 	float: right;
-	padding:15px 20px;
+	padding:15px 20px 0px 0px;
 	margin:0;
+	color: black;
 }
