@@ -1,47 +1,38 @@
 var data = {
 	'pageTitle': 'Тест по программированию',
-	'categories': [{
-		'categoryName': 'Вопрос №1',
-		'categoryList': [{
-			'href': 'http://q1.com',
+	'questions': [{
+		'questionName': 'Вопрос №1',
+		'questionList': [{
 			'title': 'Вариант ответа №1 '
 		},
 		{
-			'href': 'http://q2.com',
 			'title': 'Вариант ответа №2'
 		},
 				{
-			'href': 'http://q3.com',
 			'title': 'Вариант ответа №3'
 		}]
 	},
 	{
-		'categoryName': 'Вопрос №2',
-		'categoryList': [{
-			'href': 'http://q.com',
+		'questionName': 'Вопрос №2',
+		'questionList': [{
 			'title': 'Вариант ответа №1'
 		},
 		{
-			'href': 'http://q.com',
 			'title': 'Вариант ответа №2'
 		},
 		{
-			'href': 'http://q.com',
 			'title': 'Вариант ответа №3'
 		}]
 	},
 	{
-		'categoryName': 'Вопрос №3',
-		'categoryList': [{
-			'href': 'http://q.com',
+		'questionName': 'Вопрос №3',
+		'questionList': [{
 			'title': 'Вариант ответа №1'
 		},
 		{
-			'href': 'http://q.com',
 			'title': 'Вариант ответа №2'
 		},
 		{
-			'href': 'http://q.com',
 			'title': 'Вариант ответа №3'
 		}]
 	}],
@@ -60,20 +51,22 @@ var page = {
 		var titlePage = document.createElement('h2');
 		titlePage.innerHTML = data.pageTitle;
 		wrapper.appendChild(titlePage);
+		var form = document.createElement('form');
+		wrapper.appendChild(form);
 	},
 	buildList: function() {
-		for(var i = 0; i < data.categories.length; i++) {
-			var categoryBox = document.createElement('div');
-			categoryBox.className = 'categoryBox';
-			document.querySelector('.wrapper').appendChild(categoryBox);
+		for(var i = 0; i < data.questions.length; i++) {
+			var questionBox = document.createElement('div');
+			questionBox.className = 'questionBox';
+			document.querySelector('form').appendChild(questionBox);
 			var titleCategory = document.createElement('h3');
-			titleCategory.innerHTML = data.categories[i].categoryName;
-			categoryBox.appendChild(titleCategory);
+			titleCategory.innerHTML = data.questions[i].questionName;
+			questionBox.appendChild(titleCategory);
 
 			var listWrap = document.createElement('ul');
-			categoryBox.appendChild(listWrap);
+			questionBox.appendChild(listWrap);
 
-			for(var j = 0; j < data.categories[i].categoryList.length; j++) {
+			for(var j = 0; j < data.questions[i].questionList.length; j++) {
 				var listItem = document.createElement('li');
 				listItem.className = 'listItem';
 				listWrap.appendChild(listItem);
@@ -88,18 +81,18 @@ var page = {
 				
 				var listItem_link = document.createElement('span');
 				listItem_link.className = 'listItem_link';
-				listItem_link.innerHTML = data.categories[i].categoryList[j].title;
+				listItem_link.innerHTML = data.questions[i].questionList[j].title;
 				label.appendChild(listItem_link);
 
 				// var listItem_link = document.createElement('a');
-				// listItem_link.innerHTML = data.categories[i].categoryList[j].title;
-				// listItem_link.setAttribute('href', data.categories[i].categoryList[j].href);
+				// listItem_link.innerHTML = data.questions[i].questionList[j].title;
+				// listItem_link.setAttribute('href', data.questions[i].questionList[j].href);
 				// listItem.appendChild(listItem_link);
 			}
 		}
 			var btnDiv = document.createElement('div');
 			btnDiv.className ='text-center';
-			document.querySelector('.wrapper').appendChild(btnDiv);
+			document.querySelector('form').appendChild(btnDiv);
 
 			var btn = document.createElement("BUTTON"); 
 			btn.className = "btn btn-lg btn-info";       
