@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Tabs</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+                 
+            <ul class="tabs">
+                <li class="tab"><a href="#tabOne" class="active">Вкладка 1</a></li>
+                <li class="tab"><a href="#tabTwo">Вкладка 2</a></li>
+                <li class="tab"><a href="#tabThree">Вкладка 3</a></li>
+            </ul>
+            
+            <div class="tabs-content">
+                <div id="tabOne" class="tab-active js-tab">
+                    <h3>Текст 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="tabTwo" class="js-tab">
+                    <h3>Текст 2</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="tabThree" class="js-tab">
+                    <h3>Текст 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+    </div>
+    <p></p>
+        <form action="">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <span>Provide your name</span>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName">
+                <span>Provide your last name</span>
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <input type="text" id="country">
+                <span>Provide your country of residence</span>
+            </div>
+            <button>Show help</button>
+        </form>
+</body>
+
+</html>
