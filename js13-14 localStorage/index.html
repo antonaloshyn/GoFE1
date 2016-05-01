@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test with Template</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src='js/tmpl.js'></script>
+	<script src='js/script.js'></script>
+</head>
+<body>
+
+	<div class="modal js-modal">
+	   <div class="js-close close-modal">Закрыть
+	   </div>
+		<div class="result js-result">
+		</div>
+	</div>
+	<script type='text/html' id='test'>
+
+	   	<form class="form">
+			<p class="title" ><%= data.pageTitle %></p>
+	   		<% for (var i = 0; i < data.questions.length; i++) {  %>
+	   			<div class="block">
+	   				<p class="question"><%= data.questions[i].questionName %></p>
+	   				<ul>
+	   				   <% for(var j = 0; j < data.questions[i].variant.length; j++) { %>
+	   				   		<li><label>
+	   				   			<input type="checkbox" name="<%= data.questions[i].inputName[j] %>">
+	   				   			<%= data.questions[i].variant[j].answer %>	   				   			
+	   				   		</label>
+	   				   		</li>
+	   				   <% }; %>
+	   				</ul>
+	   			</div>
+	   		<% }; %>
+	   		<input class="btn btn-primary js-send" type="submit" value="<%= data.result %>">
+	   	</form>
+
+	</script>
+
+</body>
+</html>
