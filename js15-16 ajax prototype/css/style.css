@@ -1,0 +1,42 @@
+*{
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	width: 500px;
+}
+li {
+	padding: 10px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.url p{
+	color: green !important;
+}
+p {
+	margin: 2px;
+	color: grey;
+}
+.wrapper {
+	margin-left: 100px;
+}
+form {
+	margin-left: 50px;
+
+}
+.js-input {
+	height: 20px;
+	padding: 5px;
+	margin-top: 7px;
+}
+.js-btn {
+	height: 33px;
+}
+.wrap-form {
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+	height: 50px;
+}
