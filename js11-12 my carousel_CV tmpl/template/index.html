@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CV with Template</title>
+  <link rel="shortcut icon" href="img/redface.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/tmpl.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+  <script type="text/template" id="resume"> 
+  <div class="wrapper"> 
+      <div class="cart">
+        <div class="foto">
+          <h1><%= data[0].name %></h1>
+          <img class="picture" src="<%= data[0].img%>" alt="это я" title="время полдень">
+        </div>
+        <div class="center"> 
+          <div class="box">
+            <p class="title"><%= data[0].info%></p>
+          </div>
+          <div class="box">
+            <p><strong>Хочу учить фронтенд, потому что:</strong></p>
+            <ul>
+            <% for(var i = 0; i < data[1].reasons.length; i++ ){ %>
+              <li><%= data[1].reasons[i] %></li>
+            <% } %>
+          </ul>
+          </div>
+          <div class="box">
+            <p><strong>Мой контактный телефон:</strong><br><%= data[2].tel %></p>
+            <p><strong>Мой профиль вКонтакте</strong><br><a href=<%= data[2].vk %> target="blank">vk.com</a></p>
+          </div>
+          <div class="box1">
+            <p><strong>Мой фидбек:</strong><br><%= data[3].feedback %></p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </script>   
+</body>
+</html> 
