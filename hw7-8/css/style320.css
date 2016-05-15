@@ -1,0 +1,475 @@
+
+@font-face {
+    font-family: "league gothic";
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open sanslight";
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open sansextrabold";
+    src: url('../fonts/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.back{
+	width: 100%;
+	position: absolute;
+}
+
+.back__image{
+	height: 518px;
+	background:url(../img/back.jpg) center top no-repeat;
+}
+
+.back__slider{
+    position: absolute;
+    height: 246px;
+    width: 100%;
+    margin-top: 160px;
+    background: url(../img/pointer1.png) 20px 145px no-repeat,
+    url(../img/pointer2.png) 273px 145px no-repeat;
+    background-color: transparent;
+}
+
+.back__gradient{
+    height: 597px;
+    background: linear-gradient(to top, #36283e, #714e80);
+    border: 1px solid #33253a;
+}
+
+.back__white{
+	height: 786px;
+	background: #f9f9f9;
+}
+
+.back__advertising{
+    height: 421px;
+    background: #f9f9f9;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.back__grey{
+        display: none;
+	height: 667px;
+	border-top: 1px solid #e6e6e6;
+	background: #ececec;
+}
+
+.back__links{
+	height: 200px;
+	background: url(../img/back768.jpg) no-repeat;
+}
+
+.wrapper{
+	position: relative;
+	width: 320px;
+	height: 2306px;
+	margin: 0 auto;
+}
+
+.logo{
+	padding: 70px 0px 0px 84px;
+}
+
+nav{
+    position: relative;
+    width: 30%;
+    margin: 16px 0px 0px 125px;
+    z-index: 2;
+}
+
+.nav__menu{
+    width: 230px;
+}
+.nav__menu:hover .nav__word {
+    display: block;
+}
+.nav__item{
+	text-align: center;
+}
+
+.nav__link{
+    padding: 10px 0px;
+    color: transparent;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "league gothic";
+}
+
+.nav__word{
+    /*display: block;*/
+    width: 50px;
+    padding: 0px 0px 3px 0px;
+    margin: 32px 10px;
+    color: white;
+    border-bottom: 2px solid #edbfff;
+}
+
+.slider{
+	margin: -241px -9px 0px 0px;
+}
+
+.slider__text{
+    position: relative;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 62%;
+    height: 73px;
+    padding: 1px 0px 1px 6px;
+    font-family: "league gothic";
+    margin: 193px 0px 0px 57px;
+}
+
+.slider__image1{
+    display: none;
+    float: right;
+    width: 30%;
+    margin: -47px 91px 0px 0px;
+}
+
+.slider__image2{
+    width: 129%;
+}
+
+.slider__item1{
+    color: #fefefe;
+    font-size: 36px;	
+}
+
+.slider__item2{
+    margin: -10px 0px 0px 0px;
+    color: #edbfff;
+    font-size: 16px;
+}
+
+.slider__item3{
+    display: none;
+    margin: 5px 0px 0px -2px;
+    padding: 0px 32px 0px 0px;
+    color: #ffffff;
+    font-family: "open sanslight";
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 24px;
+}
+
+.sprite{
+	margin: 69px 0px 0px 123px;
+}
+
+.sprite__cell{
+	display: block;
+	float: left;
+	padding: 0px 0px 0px 2px;
+}
+
+.sprite__link{
+    display: block;
+    position: relative;
+    top: 9px;
+    left: -3px;
+    height: 19px;
+    width: 20px;
+    background: url(../img/sprite3.png) 0 0 no-repeat;
+}
+
+.sprite__link:hover{
+	background-position: 0 -20px;
+}
+
+.section__item{
+	margin: 101px 0px 1px 55px;
+}
+
+.section__item2{
+	margin: -21px 0px 1px 55px;
+}
+
+.section__item3{
+	margin: -4px 0px 1px 55px;
+}
+
+.section__title{
+    margin: 13px 0px 0px 18px;
+    color: white;
+    font-family: "league gothic";
+    font-size: 24px;
+    text-shadow: 2px 2px 3px #4A4449;
+}
+
+.section__info1{
+    overflow: hidden;
+    height: 72px;
+    width: 216px;
+    margin: 9px 0px 0px 17px;
+    color: white;
+    font-family: "open sanslight";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.section__info2{
+    display: block;
+    margin: 13px 25px 0px 0px;
+    color: white;
+    font-family: "league gothic";
+    font-size: 19px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.section__info2:hover{
+	text-shadow: 0px 0px 10px #fff;
+}
+
+.section__link1{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: -33px;
+    height: 28px;
+    width: 28px;
+    background: url(../img/sprite.png) 0 0 no-repeat;
+}
+
+.section__link2{
+    display: block;
+    position: relative;
+    top: 51px;
+    left: -34px;
+    height: 28px;
+    width: 28px;
+    background: url(../img/sprite.png) -28px 0 no-repeat;
+}
+
+.section__link3{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: -38px;
+    height: 28px;
+    width: 28px;
+    background: url(../img/sprite.png) -56px 0 no-repeat;
+}
+
+.section__link1:hover{
+	background-position: 0 -28px;
+}
+
+.section__link2:hover{
+	background-position: -28px -28px;
+}
+
+.section__link3:hover{
+	background-position: -56px -28px;
+}
+
+.middle{
+	margin: 140px 0px 0px 0px;
+}
+
+article{
+    width: 85%;
+    height: 264px;
+    margin: 0px 0px 0px 11px;
+    background: url(../img/frame1.png) no-repeat 23px 1px;
+    background-color: white;
+}
+
+.article__title{
+    width: 100px;
+    padding: 30px 0px 0px 84px;
+    font-size: 24px;
+    font-family: "league gothic";
+}
+
+.article__word{
+	color: #edbfff;  
+}
+
+.article__info1{
+    overflow: hidden;
+    height: 145px;
+    margin: 9px 0px 0px 79px;
+    padding: 4px 10px;
+    font-size: 16px;
+    font-family: "open sanslight";
+    line-height: 24px;
+}
+
+aside{
+    margin: 0px 0px 0px -20px;
+    background: url(../img/disk1.png) 30px 46px no-repeat,
+    url(../img/disk2.png) 30px 114px no-repeat, 
+    url(../img/disk3.png) 30px 180px no-repeat;
+}
+
+.aside__title1{
+    margin: 89px 0px 0px 31px;
+    font-size: 30px;
+    font-family: "league gothic";
+}
+
+.aside__title2{
+    overflow: hidden;
+    width: 224px;
+    height: 17px;
+    margin: 19px 0px 13px 90px;
+    font-size: 16px;
+    font-family: "open sansextrabold";
+}
+
+.aside__text{
+    overflow: hidden;
+    width: 248px;
+    height: 17px;
+    margin: 13px 0px 0px 90px;
+    font-size: 16px;
+    font-family: "open sanslight";
+}
+
+.aside__link{
+    display: block;
+    margin: 20px 35px 0px 0px;
+    color: black;
+    font-size: 19px;
+    font-family: "league gothic";
+    text-decoration: none;
+    text-align: right;
+}
+
+.article__sprite{
+	margin: 39px 0px 0px 141px;
+}
+
+.menu--white .sprite__link{
+	background: url(../img/sprite4.png) 0 0 no-repeat;
+}
+
+.sprite__link:hover{
+	background-position: 0 -20px;
+}
+
+.advt{
+    width: 87%;
+    margin: 113px 0px 59px 0px;
+    text-align: center;
+}
+
+.advt__image{
+	margin: 41px 2px 0px 40px;
+}
+
+.comment{
+        display: none;
+	margin-top: 100px;
+	font-family: "open sanslight";
+	font-size: 16px;
+}
+
+.comment__info1{
+    display: none;
+    float: left;
+    width: 30%;
+    margin: 27px 0px 0px 0px;
+}
+
+.comment__info2{
+    display: none;
+    float: left;
+    width: 30%;
+    margin: 22px 0px 0px 48px;
+    line-height: 24px;
+}
+
+.comment__info3{
+    margin: 114px 6px 0px 6px;
+    line-height: 24px;
+}
+
+.comment__info4{
+    margin: 53px 6px 0px 6px;
+    line-height: 24px;
+}
+
+.comment__copyright{
+    margin: 19px 0px 0px -4px;
+    color: #c5c5c5;
+    font-family: georgia;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.comment__text1{
+    margin: 10px 0px 0px -2px;
+    line-height: 24px;
+}
+
+.comment__title{
+    margin: 5px 0px 12px 0px;
+    font-family: "league gothic";
+    font-size: 24px;
+}
+
+footer{
+	margin-top: 130px;
+}
+
+.footer__menu{
+	display: none;
+}
+
+.footer__item{
+    display: block;
+    float: left;
+    margin: 4px 2px 0px 20px;
+}
+
+.footer__link{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "league gothic";
+        text-shadow: 2px 2px 3px #4A4449;
+}
+
+.footer__text1{
+    margin: -17px 0px 0px 84px;
+    color: white;
+    font-family: "open sanslight";
+    font-size: 12px;
+    text-shadow: 2px 2px 3px #4A4449;
+}
+
+.footer__text2{
+	font-family: "open sansextrabold";
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
