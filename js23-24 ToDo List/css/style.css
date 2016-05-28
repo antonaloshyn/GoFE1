@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "ComicSans", sans-serif;
+  background: url("../img/background.jpeg") no-repeat;
+  position: relative;
+  background-size: cover;
+  
+}
+.wrapper{
+  height: 650px;
+  width: 450px;
+  margin: 0 auto;
+  border: 1px solid grey;
+}
+p {
+  font-size: 30px;
+  text-align: center;
+}
+.item-list{
+  list-style: none;
+}
+.item-list li{
+  width: 100%;
+  margin-top: 5px;
+}
+.controlls{
+  height: 20px;
+  width: 260px;
+  margin: 20px auto;
+
+}
+.item-value{
+  margin: auto;
+  margin-left: 20px;
+  height: 20px;
+  width: 125px;
+}
+
+.dispaly-item{
+  font-size: 25px;
+  width: 370px;
+  overflow: hidden;
+  cursor: pointer;
+  float: left;
+  margin-left: 100px;
+}
+.item-delete{
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  margin-right: 50px;
+}
+.clear{
+  clear:both;
+}

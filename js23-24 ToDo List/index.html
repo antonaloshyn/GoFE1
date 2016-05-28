@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script data-main="js/app" src="lib/r.js" charset="utf-8"></script>
+    <script src="lib/templ.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <script type = "text/template" id="wrapper-template">
+    <div class="wrapper">
+    <p>ToDo List</p>
+      
+        <div class="controlls">
+          <input type="text" class = "item-value">
+          <button class = "item-add">Add Task</button>
+        </div>
+        <ul class = "item-list"></ul>
+      
+  </div>
+  </script>
+  <script type = "text/template" id="list-template">
+    <% for(var i = 0; i<data.length; i++){ %>
+      <li>
+        <span = "<%= data[i] %>" class = "display-item" title = ""> - <%= data[i] %></span>
+        <span data-value = "<%= data[i] %>" class = "item-delete" title = "Сlick to delete">X</span>
+      </li>
+      <div class = "clear"></div>
+      <% }; %>
+  </script>
+  </body>
+</html>
