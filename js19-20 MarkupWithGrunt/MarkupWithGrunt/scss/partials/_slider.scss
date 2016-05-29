@@ -1,0 +1,41 @@
+.jcarousel-wrapper {
+  position: relative;
+  height: 470px;
+  margin-bottom: 40px;
+}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  ul {
+    width: 20000em;
+    position: relative;
+    li {
+      float: left;
+    }
+  }
+}
+
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 46%;
+  a {
+    display: inline-block;
+    vertical-align:top;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    color: #4E443C;
+    text-indent: -9999px;
+    background: $white;
+    &.active {
+      background: #4E443C;
+      border: 3px solid $white;
+      color: $white;
+    }
+  }
+}
+
+
+

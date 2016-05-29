@@ -1,0 +1,526 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$fb-color-name: 'fb_color';
+$fb-color-x: 26px;
+$fb-color-y: 0px;
+$fb-color-offset-x: -26px;
+$fb-color-offset-y: 0px;
+$fb-color-width: 16px;
+$fb-color-height: 16px;
+$fb-color-total-width: 114px;
+$fb-color-total-height: 90px;
+$fb-color-image: '../images/sprites.png';
+$fb-color: (26px, 0px, -26px, 0px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'fb_color', );
+$fb-gray-name: 'fb_gray';
+$fb-gray-x: 52px;
+$fb-gray-y: 52px;
+$fb-gray-offset-x: -52px;
+$fb-gray-offset-y: -52px;
+$fb-gray-width: 16px;
+$fb-gray-height: 16px;
+$fb-gray-total-width: 114px;
+$fb-gray-total-height: 90px;
+$fb-gray-image: '../images/sprites.png';
+$fb-gray: (52px, 52px, -52px, -52px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'fb_gray', );
+$icon-email-name: 'iconEmail';
+$icon-email-x: 0px;
+$icon-email-y: 78px;
+$icon-email-offset-x: 0px;
+$icon-email-offset-y: -78px;
+$icon-email-width: 16px;
+$icon-email-height: 12px;
+$icon-email-total-width: 114px;
+$icon-email-total-height: 90px;
+$icon-email-image: '../images/sprites.png';
+$icon-email: (0px, 78px, 0px, -78px, 16px, 12px, 114px, 90px, '../images/sprites.png', 'iconEmail', );
+$icon-phone-name: 'iconPhone';
+$icon-phone-x: 104px;
+$icon-phone-y: 0px;
+$icon-phone-offset-x: -104px;
+$icon-phone-offset-y: 0px;
+$icon-phone-width: 10px;
+$icon-phone-height: 16px;
+$icon-phone-total-width: 114px;
+$icon-phone-total-height: 90px;
+$icon-phone-image: '../images/sprites.png';
+$icon-phone: (104px, 0px, -104px, 0px, 10px, 16px, 114px, 90px, '../images/sprites.png', 'iconPhone', );
+$linkedin-color-name: 'linkedin_color';
+$linkedin-color-x: 52px;
+$linkedin-color-y: 0px;
+$linkedin-color-offset-x: -52px;
+$linkedin-color-offset-y: 0px;
+$linkedin-color-width: 16px;
+$linkedin-color-height: 16px;
+$linkedin-color-total-width: 114px;
+$linkedin-color-total-height: 90px;
+$linkedin-color-image: '../images/sprites.png';
+$linkedin-color: (52px, 0px, -52px, 0px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'linkedin_color', );
+$linkedin-gray-name: 'linkedin_gray';
+$linkedin-gray-x: 52px;
+$linkedin-gray-y: 26px;
+$linkedin-gray-offset-x: -52px;
+$linkedin-gray-offset-y: -26px;
+$linkedin-gray-width: 16px;
+$linkedin-gray-height: 16px;
+$linkedin-gray-total-width: 114px;
+$linkedin-gray-total-height: 90px;
+$linkedin-gray-image: '../images/sprites.png';
+$linkedin-gray: (52px, 26px, -52px, -26px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'linkedin_gray', );
+$point-name: 'point';
+$point-x: 78px;
+$point-y: 50px;
+$point-offset-x: -78px;
+$point-offset-y: -50px;
+$point-width: 12px;
+$point-height: 16px;
+$point-total-width: 114px;
+$point-total-height: 90px;
+$point-image: '../images/sprites.png';
+$point: (78px, 50px, -78px, -50px, 12px, 16px, 114px, 90px, '../images/sprites.png', 'point', );
+$rss-color-name: 'rss_color';
+$rss-color-x: 26px;
+$rss-color-y: 52px;
+$rss-color-offset-x: -26px;
+$rss-color-offset-y: -52px;
+$rss-color-width: 16px;
+$rss-color-height: 16px;
+$rss-color-total-width: 114px;
+$rss-color-total-height: 90px;
+$rss-color-image: '../images/sprites.png';
+$rss-color: (26px, 52px, -26px, -52px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'rss_color', );
+$rss-gray-name: 'rss_gray';
+$rss-gray-x: 0px;
+$rss-gray-y: 0px;
+$rss-gray-offset-x: 0px;
+$rss-gray-offset-y: 0px;
+$rss-gray-width: 16px;
+$rss-gray-height: 16px;
+$rss-gray-total-width: 114px;
+$rss-gray-total-height: 90px;
+$rss-gray-image: '../images/sprites.png';
+$rss-gray: (0px, 0px, 0px, 0px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'rss_gray', );
+$search-name: 'search';
+$search-x: 78px;
+$search-y: 26px;
+$search-offset-x: -78px;
+$search-offset-y: -26px;
+$search-width: 14px;
+$search-height: 14px;
+$search-total-width: 114px;
+$search-total-height: 90px;
+$search-image: '../images/sprites.png';
+$search: (78px, 26px, -78px, -26px, 14px, 14px, 114px, 90px, '../images/sprites.png', 'search', );
+$shape-color-name: 'shape_color';
+$shape-color-x: 104px;
+$shape-color-y: 26px;
+$shape-color-offset-x: -104px;
+$shape-color-offset-y: -26px;
+$shape-color-width: 10px;
+$shape-color-height: 9px;
+$shape-color-total-width: 114px;
+$shape-color-total-height: 90px;
+$shape-color-image: '../images/sprites.png';
+$shape-color: (104px, 26px, -104px, -26px, 10px, 9px, 114px, 90px, '../images/sprites.png', 'shape_color', );
+$shape-gray-name: 'shape_gray';
+$shape-gray-x: 104px;
+$shape-gray-y: 45px;
+$shape-gray-offset-x: -104px;
+$shape-gray-offset-y: -45px;
+$shape-gray-width: 10px;
+$shape-gray-height: 9px;
+$shape-gray-total-width: 114px;
+$shape-gray-total-height: 90px;
+$shape-gray-image: '../images/sprites.png';
+$shape-gray: (104px, 45px, -104px, -45px, 10px, 9px, 114px, 90px, '../images/sprites.png', 'shape_gray', );
+$skype-color-name: 'skype_color';
+$skype-color-x: 0px;
+$skype-color-y: 52px;
+$skype-color-offset-x: 0px;
+$skype-color-offset-y: -52px;
+$skype-color-width: 16px;
+$skype-color-height: 16px;
+$skype-color-total-width: 114px;
+$skype-color-total-height: 90px;
+$skype-color-image: '../images/sprites.png';
+$skype-color: (0px, 52px, 0px, -52px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'skype_color', );
+$skype-gray-name: 'skype_gray';
+$skype-gray-x: 26px;
+$skype-gray-y: 26px;
+$skype-gray-offset-x: -26px;
+$skype-gray-offset-y: -26px;
+$skype-gray-width: 16px;
+$skype-gray-height: 16px;
+$skype-gray-total-width: 114px;
+$skype-gray-total-height: 90px;
+$skype-gray-image: '../images/sprites.png';
+$skype-gray: (26px, 26px, -26px, -26px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'skype_gray', );
+$twitter-color-name: 'twitter_color';
+$twitter-color-x: 0px;
+$twitter-color-y: 26px;
+$twitter-color-offset-x: 0px;
+$twitter-color-offset-y: -26px;
+$twitter-color-width: 16px;
+$twitter-color-height: 16px;
+$twitter-color-total-width: 114px;
+$twitter-color-total-height: 90px;
+$twitter-color-image: '../images/sprites.png';
+$twitter-color: (0px, 26px, 0px, -26px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'twitter_color', );
+$twitter-gray-name: 'twitter_gray';
+$twitter-gray-x: 78px;
+$twitter-gray-y: 0px;
+$twitter-gray-offset-x: -78px;
+$twitter-gray-offset-y: 0px;
+$twitter-gray-width: 16px;
+$twitter-gray-height: 16px;
+$twitter-gray-total-width: 114px;
+$twitter-gray-total-height: 90px;
+$twitter-gray-image: '../images/sprites.png';
+$twitter-gray: (78px, 0px, -78px, 0px, 16px, 16px, 114px, 90px, '../images/sprites.png', 'twitter_gray', );
+$fb-color-2x-name: 'fb_color@2x';
+$fb-color-2x-x: 52px;
+$fb-color-2x-y: 0px;
+$fb-color-2x-offset-x: -52px;
+$fb-color-2x-offset-y: 0px;
+$fb-color-2x-width: 32px;
+$fb-color-2x-height: 32px;
+$fb-color-2x-total-width: 228px;
+$fb-color-2x-total-height: 180px;
+$fb-color-2x-image: '../images/sprites@2x.png';
+$fb-color-2x: (52px, 0px, -52px, 0px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'fb_color@2x', );
+$fb-gray-2x-name: 'fb_gray@2x';
+$fb-gray-2x-x: 104px;
+$fb-gray-2x-y: 104px;
+$fb-gray-2x-offset-x: -104px;
+$fb-gray-2x-offset-y: -104px;
+$fb-gray-2x-width: 32px;
+$fb-gray-2x-height: 32px;
+$fb-gray-2x-total-width: 228px;
+$fb-gray-2x-total-height: 180px;
+$fb-gray-2x-image: '../images/sprites@2x.png';
+$fb-gray-2x: (104px, 104px, -104px, -104px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'fb_gray@2x', );
+$icon-email-2x-name: 'iconEmail@2x';
+$icon-email-2x-x: 0px;
+$icon-email-2x-y: 156px;
+$icon-email-2x-offset-x: 0px;
+$icon-email-2x-offset-y: -156px;
+$icon-email-2x-width: 32px;
+$icon-email-2x-height: 24px;
+$icon-email-2x-total-width: 228px;
+$icon-email-2x-total-height: 180px;
+$icon-email-2x-image: '../images/sprites@2x.png';
+$icon-email-2x: (0px, 156px, 0px, -156px, 32px, 24px, 228px, 180px, '../images/sprites@2x.png', 'iconEmail@2x', );
+$icon-phone-2x-name: 'iconPhone@2x';
+$icon-phone-2x-x: 208px;
+$icon-phone-2x-y: 0px;
+$icon-phone-2x-offset-x: -208px;
+$icon-phone-2x-offset-y: 0px;
+$icon-phone-2x-width: 20px;
+$icon-phone-2x-height: 32px;
+$icon-phone-2x-total-width: 228px;
+$icon-phone-2x-total-height: 180px;
+$icon-phone-2x-image: '../images/sprites@2x.png';
+$icon-phone-2x: (208px, 0px, -208px, 0px, 20px, 32px, 228px, 180px, '../images/sprites@2x.png', 'iconPhone@2x', );
+$linkedin-color-2x-name: 'linkedin_color@2x';
+$linkedin-color-2x-x: 104px;
+$linkedin-color-2x-y: 0px;
+$linkedin-color-2x-offset-x: -104px;
+$linkedin-color-2x-offset-y: 0px;
+$linkedin-color-2x-width: 32px;
+$linkedin-color-2x-height: 32px;
+$linkedin-color-2x-total-width: 228px;
+$linkedin-color-2x-total-height: 180px;
+$linkedin-color-2x-image: '../images/sprites@2x.png';
+$linkedin-color-2x: (104px, 0px, -104px, 0px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'linkedin_color@2x', );
+$linkedin-gray-2x-name: 'linkedin_gray@2x';
+$linkedin-gray-2x-x: 104px;
+$linkedin-gray-2x-y: 52px;
+$linkedin-gray-2x-offset-x: -104px;
+$linkedin-gray-2x-offset-y: -52px;
+$linkedin-gray-2x-width: 32px;
+$linkedin-gray-2x-height: 32px;
+$linkedin-gray-2x-total-width: 228px;
+$linkedin-gray-2x-total-height: 180px;
+$linkedin-gray-2x-image: '../images/sprites@2x.png';
+$linkedin-gray-2x: (104px, 52px, -104px, -52px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'linkedin_gray@2x', );
+$point-2x-name: 'point@2x';
+$point-2x-x: 156px;
+$point-2x-y: 100px;
+$point-2x-offset-x: -156px;
+$point-2x-offset-y: -100px;
+$point-2x-width: 24px;
+$point-2x-height: 32px;
+$point-2x-total-width: 228px;
+$point-2x-total-height: 180px;
+$point-2x-image: '../images/sprites@2x.png';
+$point-2x: (156px, 100px, -156px, -100px, 24px, 32px, 228px, 180px, '../images/sprites@2x.png', 'point@2x', );
+$rss-color-2x-name: 'rss_color@2x';
+$rss-color-2x-x: 52px;
+$rss-color-2x-y: 104px;
+$rss-color-2x-offset-x: -52px;
+$rss-color-2x-offset-y: -104px;
+$rss-color-2x-width: 32px;
+$rss-color-2x-height: 32px;
+$rss-color-2x-total-width: 228px;
+$rss-color-2x-total-height: 180px;
+$rss-color-2x-image: '../images/sprites@2x.png';
+$rss-color-2x: (52px, 104px, -52px, -104px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'rss_color@2x', );
+$rss-gray-2x-name: 'rss_gray@2x';
+$rss-gray-2x-x: 0px;
+$rss-gray-2x-y: 0px;
+$rss-gray-2x-offset-x: 0px;
+$rss-gray-2x-offset-y: 0px;
+$rss-gray-2x-width: 32px;
+$rss-gray-2x-height: 32px;
+$rss-gray-2x-total-width: 228px;
+$rss-gray-2x-total-height: 180px;
+$rss-gray-2x-image: '../images/sprites@2x.png';
+$rss-gray-2x: (0px, 0px, 0px, 0px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'rss_gray@2x', );
+$search-2x-name: 'search@2x';
+$search-2x-x: 156px;
+$search-2x-y: 52px;
+$search-2x-offset-x: -156px;
+$search-2x-offset-y: -52px;
+$search-2x-width: 28px;
+$search-2x-height: 28px;
+$search-2x-total-width: 228px;
+$search-2x-total-height: 180px;
+$search-2x-image: '../images/sprites@2x.png';
+$search-2x: (156px, 52px, -156px, -52px, 28px, 28px, 228px, 180px, '../images/sprites@2x.png', 'search@2x', );
+$shape-color-2x-name: 'shape_color@2x';
+$shape-color-2x-x: 208px;
+$shape-color-2x-y: 52px;
+$shape-color-2x-offset-x: -208px;
+$shape-color-2x-offset-y: -52px;
+$shape-color-2x-width: 20px;
+$shape-color-2x-height: 18px;
+$shape-color-2x-total-width: 228px;
+$shape-color-2x-total-height: 180px;
+$shape-color-2x-image: '../images/sprites@2x.png';
+$shape-color-2x: (208px, 52px, -208px, -52px, 20px, 18px, 228px, 180px, '../images/sprites@2x.png', 'shape_color@2x', );
+$shape-gray-2x-name: 'shape_gray@2x';
+$shape-gray-2x-x: 208px;
+$shape-gray-2x-y: 90px;
+$shape-gray-2x-offset-x: -208px;
+$shape-gray-2x-offset-y: -90px;
+$shape-gray-2x-width: 20px;
+$shape-gray-2x-height: 18px;
+$shape-gray-2x-total-width: 228px;
+$shape-gray-2x-total-height: 180px;
+$shape-gray-2x-image: '../images/sprites@2x.png';
+$shape-gray-2x: (208px, 90px, -208px, -90px, 20px, 18px, 228px, 180px, '../images/sprites@2x.png', 'shape_gray@2x', );
+$skype-color-2x-name: 'skype_color@2x';
+$skype-color-2x-x: 0px;
+$skype-color-2x-y: 104px;
+$skype-color-2x-offset-x: 0px;
+$skype-color-2x-offset-y: -104px;
+$skype-color-2x-width: 32px;
+$skype-color-2x-height: 32px;
+$skype-color-2x-total-width: 228px;
+$skype-color-2x-total-height: 180px;
+$skype-color-2x-image: '../images/sprites@2x.png';
+$skype-color-2x: (0px, 104px, 0px, -104px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'skype_color@2x', );
+$skype-gray-2x-name: 'skype_gray@2x';
+$skype-gray-2x-x: 52px;
+$skype-gray-2x-y: 52px;
+$skype-gray-2x-offset-x: -52px;
+$skype-gray-2x-offset-y: -52px;
+$skype-gray-2x-width: 32px;
+$skype-gray-2x-height: 32px;
+$skype-gray-2x-total-width: 228px;
+$skype-gray-2x-total-height: 180px;
+$skype-gray-2x-image: '../images/sprites@2x.png';
+$skype-gray-2x: (52px, 52px, -52px, -52px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'skype_gray@2x', );
+$twitter-color-2x-name: 'twitter_color@2x';
+$twitter-color-2x-x: 0px;
+$twitter-color-2x-y: 52px;
+$twitter-color-2x-offset-x: 0px;
+$twitter-color-2x-offset-y: -52px;
+$twitter-color-2x-width: 32px;
+$twitter-color-2x-height: 32px;
+$twitter-color-2x-total-width: 228px;
+$twitter-color-2x-total-height: 180px;
+$twitter-color-2x-image: '../images/sprites@2x.png';
+$twitter-color-2x: (0px, 52px, 0px, -52px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'twitter_color@2x', );
+$twitter-gray-2x-name: 'twitter_gray@2x';
+$twitter-gray-2x-x: 156px;
+$twitter-gray-2x-y: 0px;
+$twitter-gray-2x-offset-x: -156px;
+$twitter-gray-2x-offset-y: 0px;
+$twitter-gray-2x-width: 32px;
+$twitter-gray-2x-height: 32px;
+$twitter-gray-2x-total-width: 228px;
+$twitter-gray-2x-total-height: 180px;
+$twitter-gray-2x-image: '../images/sprites@2x.png';
+$twitter-gray-2x: (156px, 0px, -156px, 0px, 32px, 32px, 228px, 180px, '../images/sprites@2x.png', 'twitter_gray@2x', );
+$spritesheet-width: 114px;
+$spritesheet-height: 90px;
+$spritesheet-image: '../images/sprites.png';
+$spritesheet-sprites: ($fb-color, $fb-gray, $icon-email, $icon-phone, $linkedin-color, $linkedin-gray, $point, $rss-color, $rss-gray, $search, $shape-color, $shape-gray, $skype-color, $skype-gray, $twitter-color, $twitter-gray, );
+$spritesheet: (114px, 90px, '../images/sprites.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 228px;
+$retina-spritesheet-height: 180px;
+$retina-spritesheet-image: '../images/sprites@2x.png';
+$retina-spritesheet-sprites: ($fb-color-2x, $fb-gray-2x, $icon-email-2x, $icon-phone-2x, $linkedin-color-2x, $linkedin-gray-2x, $point-2x, $rss-color-2x, $rss-gray-2x, $search-2x, $shape-color-2x, $shape-gray-2x, $skype-color-2x, $skype-gray-2x, $twitter-color-2x, $twitter-gray-2x, );
+$retina-spritesheet: (228px, 180px, '../images/sprites@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$fb-color-group-name: 'fb_color';
+$fb-color-group: ('fb_color', $fb-color, $fb-color-2x, );
+$fb-gray-group-name: 'fb_gray';
+$fb-gray-group: ('fb_gray', $fb-gray, $fb-gray-2x, );
+$icon-email-group-name: 'iconEmail';
+$icon-email-group: ('iconEmail', $icon-email, $icon-email-2x, );
+$icon-phone-group-name: 'iconPhone';
+$icon-phone-group: ('iconPhone', $icon-phone, $icon-phone-2x, );
+$linkedin-color-group-name: 'linkedin_color';
+$linkedin-color-group: ('linkedin_color', $linkedin-color, $linkedin-color-2x, );
+$linkedin-gray-group-name: 'linkedin_gray';
+$linkedin-gray-group: ('linkedin_gray', $linkedin-gray, $linkedin-gray-2x, );
+$point-group-name: 'point';
+$point-group: ('point', $point, $point-2x, );
+$rss-color-group-name: 'rss_color';
+$rss-color-group: ('rss_color', $rss-color, $rss-color-2x, );
+$rss-gray-group-name: 'rss_gray';
+$rss-gray-group: ('rss_gray', $rss-gray, $rss-gray-2x, );
+$search-group-name: 'search';
+$search-group: ('search', $search, $search-2x, );
+$shape-color-group-name: 'shape_color';
+$shape-color-group: ('shape_color', $shape-color, $shape-color-2x, );
+$shape-gray-group-name: 'shape_gray';
+$shape-gray-group: ('shape_gray', $shape-gray, $shape-gray-2x, );
+$skype-color-group-name: 'skype_color';
+$skype-color-group: ('skype_color', $skype-color, $skype-color-2x, );
+$skype-gray-group-name: 'skype_gray';
+$skype-gray-group: ('skype_gray', $skype-gray, $skype-gray-2x, );
+$twitter-color-group-name: 'twitter_color';
+$twitter-color-group: ('twitter_color', $twitter-color, $twitter-color-2x, );
+$twitter-gray-group-name: 'twitter_gray';
+$twitter-gray-group: ('twitter_gray', $twitter-gray, $twitter-gray-2x, );
+$retina-groups: ($fb-color-group, $fb-gray-group, $icon-email-group, $icon-phone-group, $linkedin-color-group, $linkedin-gray-group, $point-group, $rss-color-group, $rss-gray-group, $search-group, $shape-color-group, $shape-gray-group, $skype-color-group, $skype-gray-group, $twitter-color-group, $twitter-gray-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

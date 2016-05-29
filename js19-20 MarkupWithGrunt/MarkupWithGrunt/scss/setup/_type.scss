@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'ubuntu condensed';
+  src: url('../fonts/ubuntu_condensed.eot');
+  src: url('../fonts/ubuntu_condensed.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu_condensed.woff2') format('woff2'),
+  url('../fonts/ubuntu_condensed.woff') format('woff'),
+  url('../fonts/ubuntu_condensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ubuntu light';
+  src: url('../fonts/ubuntu_light.eot');
+  src: url('../fonts/ubuntu_light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu_light.woff2') format('woff2'),
+  url('../fonts/ubuntu_light.woff') format('woff'),
+  url('../fonts/ubuntu_light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ubuntu medium';
+  src: url('../fonts/ubuntu_medium.eot');
+  src: url('../fonts/ubuntu_medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu_medium.woff2') format('woff2'),
+  url('../fonts/ubuntu_medium.woff') format('woff'),
+  url('../fonts/ubuntu_medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+//FONT FAMILIES
+$font-base: Arial;
+$font-head: 'ubuntu medium', Arial, sans-serif;
+$font-extra: 'ubuntu light', Arial, sans-serif;
+$font-condensed: 'ubuntu condensed', Arial, sans-serif;
+
+//FONT SIZES
+$fontSize-tiny: 12px;
+$fontSize-smallest: 13px;
+$fontSize-small: 16px;
+$fontSize-normal: 20px;
+$fontSize-large: 24px;
+$fontSize-biggest: 90px;
+
+

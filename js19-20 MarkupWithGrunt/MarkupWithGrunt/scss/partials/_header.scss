@@ -1,0 +1,62 @@
+
+.top{
+	width: 100%;
+	background: $white;
+	.container {
+		padding: 37px 0;
+	}
+}
+.logo {
+	display: block;
+	text-decoration: none;
+}
+.social-icons {
+	padding-top: 10px;
+	li {
+		display: inline-block;
+		margin-right: 20px; 
+		padding: 0;
+		height: 16px;
+		width: 18px;
+		&:last-child {
+			margin-right: 0; 
+		}
+	}
+}
+.social-icons__link {
+    display: block;
+    height: 16px;
+	width: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.social-icons__link_fb {
+	@include retina-sprite($fb-gray-group);
+	&:hover {
+		@include retina-sprite($fb-color-group);
+	}
+}
+.social-icons__link_tw {
+	@include retina-sprite($twitter-gray-group);
+	&:hover {
+		@include retina-sprite($twitter-color-group);
+	}
+}
+.social-icons__link_rss {
+	@include retina-sprite($rss-gray-group);
+	&:hover {
+		@include retina-sprite($rss-color-group);
+	}
+}
+.social-icons__link_ln {
+	@include retina-sprite($linkedin-gray-group);
+	&:hover {
+		@include retina-sprite($linkedin-color-group);
+	}
+}
+.social-icons__link_skype {
+	@include retina-sprite($skype-gray-group);
+	&:hover {
+		@include retina-sprite($skype-color-group);
+	}
+}

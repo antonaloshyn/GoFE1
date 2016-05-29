@@ -1,0 +1,61 @@
+.services {
+	padding: 48px 0 35px;
+	background: $dark-grey;
+	span {
+		display: block;
+		padding-bottom: 58px;
+		color: $white;
+		font-size: $fontSize-large;
+		font-family: $font-head;
+	}
+}
+.services__wrap_block {
+	display: inline-block;
+	margin-bottom: 35px;
+	padding-right: 23px;
+	&:hover {
+		.services__wrap_opacity {
+			top: 0;
+		}
+		.services__wrap_link {
+			color: $orang;
+			transition: color .3s ease-in-out;
+		}
+	}
+}
+.services__wrap_block-last {
+	padding-right: 0;
+}
+.services__wrap_img {
+	position: relative;
+	height: 268px;
+	width: 268px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.services__wrap_opacity {
+	display: block;
+  	position: absolute;
+	left: 0px;
+	top: 100%;
+ 	height: 100%;
+	width: 100%;
+	color: $white;
+	font-size: 36px;
+	font-weight: 100;
+	font-family: $font-base; 
+	background: $blue url(../images/plas.png) no-repeat 50% 50%;
+	opacity: 0.9;
+	z-index: 1;
+	transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+.services__wrap_link {
+	display: block;
+	padding-top: 35px;
+	text-align: center;
+	text-decoration: none;
+	color: $white;
+	font-family: $font-head;
+	font-size: $fontSize-small;
+}

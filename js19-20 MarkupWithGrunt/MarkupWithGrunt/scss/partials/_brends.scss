@@ -1,0 +1,15 @@
+.brends {
+	background: $white;
+}
+.brends__list {
+	display: table;
+	padding: 100px 0;
+	li {
+		display: table-cell;
+		opacity: 0.65;
+		&:hover {
+			opacity: 1;
+			transition: opacity .3s ease-in-out;
+		}
+	}
+}
